@@ -35,7 +35,6 @@ The project is designed for:
 - File I/O operations
 - Collections and generics
 - Reflection and annotations
-- Design patterns and advanced examples (in sample package)
 
 ### What This Project Does NOT Cover
 
@@ -51,28 +50,6 @@ The project is designed for:
 - **Language Level**: Java 21
 - **IDE**: IntelliJ IDEA (recommended) or any Java IDE
 - **Operating System**: Cross-platform (Linux, macOS, Windows)
-
-### Installing OpenJDK 23
-
-**Linux (Ubuntu/Debian):**
-```bash
-sudo apt update
-sudo apt install openjdk-23-jdk
-```
-
-**macOS (using Homebrew):**
-```bash
-brew install openjdk@23
-```
-
-**Windows:**
-Download from [Adoptium](https://adoptium.net/) or [Oracle](https://www.oracle.com/java/technologies/downloads/)
-
-Verify installation:
-```bash
-java -version
-javac -version
-```
 
 ## Project Structure
 
@@ -392,70 +369,6 @@ The sample package contains Maven-based examples with external dependencies:
 **Sample Models** (`sample/src/main/java/models/`):
 - `common/` - Pair and common types
 - `entity/` - Entity classes (City, ParkingZone, Shape, etc.)
-
-## Example Usage
-
-### Running a Lambda Expression Demo
-
-```bash
-# Compile
-javac -d ./out/production/Lessons ./src/tutorial/lambda/s1/LambdaGame.java
-
-# Run
-java -cp out/production/Lessons tutorial.lambda.s1.LambdaGame
-```
-
-### Running a Virtual Threads Example
-
-```bash
-# Compile
-javac -d ./out/production/Lessons ./src/tutorial/thread/VirtualThead.java
-
-# Run
-java -cp out/production/Lessons tutorial.thread.VirtualThead
-```
-
-This demonstrates Java 21's virtual threads executing concurrent tasks efficiently.
-
-### Exploring Data Types
-
-```bash
-# Compile
-javac -d ./out/production/Lessons ./src/tutorial/datatype/DataTypes.java
-
-# Run
-java -cp out/production/Lessons tutorial.datatype.DataTypes
-```
-
-Shows primitive data types, casting, and type conversions.
-
-### Running a Java 8 Features Demo
-
-```bash
-# Compile
-javac -d ./out/production/Lessons ./src/newfeatures/java8/Java8.java
-
-# Run
-java -cp out/production/Lessons newfeatures.java8.Java8
-```
-
-This will demonstrate:
-- Lambda expressions
-- Stream API
-- Optional
-- Method references
-- Default interface methods
-- Date/Time API
-
-### Using Model Classes
-
-```bash
-# Compile model classes
-javac -d ./out/production/Lessons ./src/tutorial/models/vehicle/*.java
-
-# Run Vehicle example
-java -cp out/production/Lessons tutorial.models.vehicle.Vehicle
-```
 
 ## Contributing
 
