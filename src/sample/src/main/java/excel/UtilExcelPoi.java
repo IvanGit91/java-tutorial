@@ -163,7 +163,7 @@ public abstract class UtilExcelPoi {
             applyDefaultCurrencyFormat(style);
             cell.setCellValue((Double) UtilFunction.valueOrEmptyNum((Double) field));
         } else {
-            logger.warn("Unhandled field type. Value: {}, Class: {}", field, field.getClass());
+            logger.warn("Unhandled field type. TValue: {}, Class: {}", field, field.getClass());
         }
 
         if (style != null) {

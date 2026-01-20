@@ -26,7 +26,7 @@ public class AdvancedSearchBuilder {
     private String value;                                       // The value entered by the user
     private Double numericValue;                                // The numeric value entered by the user
     private List<String> values = new ArrayList<>();            // Multiple values entered by the user
-    private List<StringPair> valuePairs = new ArrayList<>();    // Value pairs entered by the user
+    private List<StringPair> valuePairs = new ArrayList<>();    // TValue pairs entered by the user
 
     // Fields populated by constructor
     private String displayName;         // The symbolic name displayed in the view

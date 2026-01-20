@@ -50,7 +50,7 @@ public class UtilsCommon {
     /**
      * Gets the default value for a given type.
      *
-     * @param value Value to check type
+     * @param value TValue to check type
      * @return Default value: 0 for Integer, 0.0 for Double, empty string for others
      */
     public static <T> Object getDefValue(T value) {
@@ -71,8 +71,8 @@ public class UtilsCommon {
     /**
      * Returns the value or its default if null/empty.
      *
-     * @param value Value to check
-     * @return Value or default
+     * @param value TValue to check
+     * @return TValue or default
      */
     public static <T> Object vOrE(T value) {
         return vOrE(value, false);
@@ -81,9 +81,9 @@ public class UtilsCommon {
     /**
      * Returns the value or a custom default if null/empty.
      *
-     * @param value    Value to check
+     * @param value    TValue to check
      * @param defValue Default value to return
-     * @return Value or default
+     * @return TValue or default
      */
     public static <T> Object vOrE(T value, Object defValue) {
         return vOrE(value, false, defValue);
@@ -92,9 +92,9 @@ public class UtilsCommon {
     /**
      * Returns the value or default, with iteration flag.
      *
-     * @param value Value to check
+     * @param value TValue to check
      * @param iter  If true, returns null instead of default for null values
-     * @return Value or default
+     * @return TValue or default
      */
     public static <T> Object vOrE(T value, boolean iter) {
         return vOrE(value, iter, getDefValue(value));
@@ -103,10 +103,10 @@ public class UtilsCommon {
     /**
      * Returns the value or custom default, with iteration flag.
      *
-     * @param value    Value to check
+     * @param value    TValue to check
      * @param iter     If true, returns null instead of default for null values
      * @param defValue Default value to return
-     * @return Value or default
+     * @return TValue or default
      */
     public static <T> Object vOrE(T value, boolean iter, Object defValue) {
         return vOrE(value, iter, false, defValue);
@@ -115,9 +115,9 @@ public class UtilsCommon {
     /**
      * Returns the value with optional parsing, or default.
      *
-     * @param value Value to check
+     * @param value TValue to check
      * @param parse If true, attempts to parse string to number
-     * @return Value or default
+     * @return TValue or default
      */
     public static <T> Object vOrEParse(T value, boolean parse) {
         return vOrEParse(value, false, getDefValue(value));
@@ -126,10 +126,10 @@ public class UtilsCommon {
     /**
      * Returns the value with optional parsing, or custom default.
      *
-     * @param value    Value to check
+     * @param value    TValue to check
      * @param parse    If true, attempts to parse string to number
      * @param defValue Default value to return
-     * @return Value or default
+     * @return TValue or default
      */
     public static <T> Object vOrEParse(T value, boolean parse, Object defValue) {
         return vOrE(value, false, parse, defValue);
@@ -138,11 +138,11 @@ public class UtilsCommon {
     /**
      * Core method for value or empty/default handling.
      *
-     * @param value    Value to check
+     * @param value    TValue to check
      * @param iter     If true, returns null/default for iteration scenarios
      * @param parse    If true, attempts to parse string to number
      * @param defValue Default value to return
-     * @return Value or default based on conditions
+     * @return TValue or default based on conditions
      */
     public static <T> Object vOrE(T value, boolean iter, boolean parse, Object defValue) {
         Object newObj = value;
@@ -193,7 +193,7 @@ public class UtilsCommon {
     /**
      * Returns the value as string or empty string if null.
      *
-     * @param value Value to convert
+     * @param value TValue to convert
      * @return String value or empty string
      */
     public static <T> String valueOrEmpty(T value) {
@@ -203,7 +203,7 @@ public class UtilsCommon {
     /**
      * Returns the value as string or empty string based on iteration flag.
      *
-     * @param value Value to convert
+     * @param value TValue to convert
      * @param iter  If true, returns empty string
      * @return String value or empty string
      */
@@ -258,8 +258,8 @@ public class UtilsCommon {
     /**
      * Returns the value or "[N.D]" placeholder if null.
      *
-     * @param value Value to check
-     * @return Value or "[N.D]" (Not Defined)
+     * @param value TValue to check
+     * @return TValue or "[N.D]" (Not Defined)
      */
     @SuppressWarnings("unchecked")
     public static <T> T nullZero(T value) {
@@ -269,7 +269,7 @@ public class UtilsCommon {
     /**
      * Returns the value as string or empty string if null.
      *
-     * @param value Value to check
+     * @param value TValue to check
      * @return String value or empty string
      */
     public static <T> String nullZeroEmpty(T value) {

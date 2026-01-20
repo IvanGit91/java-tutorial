@@ -16,7 +16,7 @@ public class UtilsMath {
     /**
      * Rounds a double to 2 decimal places (currency format).
      *
-     * @param value Value to round
+     * @param value TValue to round
      * @return Rounded value with 2 decimal places
      */
     public static double roundDoubleCurrency(double value) {
@@ -26,7 +26,7 @@ public class UtilsMath {
     /**
      * Rounds a double to the specified number of decimal places.
      *
-     * @param value       Value to round
+     * @param value       TValue to round
      * @param numDecimals Number of decimal places
      * @return Rounded value
      */
@@ -61,7 +61,7 @@ public class UtilsMath {
      * Truncates a double to the specified number of decimal places.
      * Uses floor rounding for positive numbers and ceiling for negative.
      *
-     * @param x                Value to truncate
+     * @param x                TValue to truncate
      * @param numberOfDecimals Number of decimal places to keep
      * @return Truncated value
      */
@@ -82,7 +82,7 @@ public class UtilsMath {
     /**
      * Checks if a value represents a double (contains decimal point).
      *
-     * @param value Value to check
+     * @param value TValue to check
      * @return true if value is a valid double with decimal point
      */
     public static <T> boolean isDouble(T value) {
@@ -157,7 +157,7 @@ public class UtilsMath {
     // ------------ TAX CALCULATIONS ------------
 
     /**
-     * Calculates the VAT (Value Added Tax) amount for a given value.
+     * Calculates the VAT (TValue Added Tax) amount for a given value.
      *
      * @param value   Base value
      * @param vatRate VAT rate percentage (e.g., 22 for 22%)

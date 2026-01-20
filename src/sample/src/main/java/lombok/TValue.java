@@ -1,10 +1,10 @@
 package lombok;
 
 @Data
-@lombok.Value //IMMUTABLE
+@Value //IMMUTABLE
 @EqualsAndHashCode
 @ToString
-public class Value {
+public class TValue {
     private Long id = 1L;
     private String nome = "dsa";
 }

@@ -79,7 +79,7 @@ public class UtilsReflection {
      *
      * @param obj       Target object
      * @param fieldName Field name
-     * @param value     Value to set
+     * @param value     TValue to set
      */
     @SneakyThrows
     public static void callSetter(Object obj, String fieldName, Object value) {

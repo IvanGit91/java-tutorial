@@ -61,12 +61,12 @@ public class TLombok {
         val valDTO = new Val(1L, "ds");
         valDTO.setId(4L);
         valDTO.setNome("sadsa");
-        log.info("Value: " + valDTO);
+        log.info("TValue: " + valDTO);
     }
 
     public static void value() {
-        val value = new Value();
-        log.info("Value: " + value);
+        val value = new TValue();
+        log.info("TValue: " + value);
     }
 
 }

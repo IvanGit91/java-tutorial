@@ -140,7 +140,6 @@ Lessons/
 │   │
 │   └── sample/                       # Advanced examples (Maven project)
 │       └── src/main/java/
-│           ├── common/               # Album, Track, Artist, Member
 │           ├── models/               # Model classes
 │           │   ├── common/           # Common models
 │           │   └── entity/           # Entity classes
