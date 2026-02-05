@@ -44,7 +44,7 @@ src/
 
 ### newfeatures/
 
-`java5/` through `java21/` - features introduced in each Java version.
+`v5/` through `v25/` - features introduced in each Java version.
 
 ### sample/ (Maven)
 

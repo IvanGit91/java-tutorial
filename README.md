@@ -31,7 +31,7 @@ The project is designed for:
 - Fundamental Java concepts (data types, encapsulation, polymorphism)
 - Object-oriented programming principles
 - Concurrency and multithreading
-- Java version evolution (Java 5 through Java 21 features)
+- Java version evolution (Java 5 through Java 25 features)
 - File I/O operations
 - Collections and generics
 - Reflection and annotations
@@ -120,23 +120,27 @@ Lessons/
 │   │   └── activedirectory/          # LDAP examples
 │   │
 │   ├── newfeatures/                  # Java version-specific features
-│   │   ├── java5/                    # Generics, enums, varargs
-│   │   ├── java6/                    # Scripting API
-│   │   ├── java7/                    # Try-with-resources, diamond operator
-│   │   ├── java8/                    # Lambda, streams, Optional
-│   │   ├── java9/                    # Modules, private interface methods
-│   │   ├── java10/                   # Local variable type inference (var)
-│   │   ├── java11/                   # String methods, HTTP client
-│   │   ├── java12/                   # Switch expressions (preview)
-│   │   ├── java13/                   # Text blocks, yield (preview)
-│   │   ├── java14/                   # Records (preview), pattern matching
-│   │   ├── java15/                   # Sealed classes, text blocks
-│   │   ├── java16/                   # Records, pattern matching for instanceof
-│   │   ├── java17/                   # Sealed classes, enhanced switch
-│   │   ├── java18/                   # UTF-8 by default
-│   │   ├── java19/                   # Virtual threads (preview)
-│   │   ├── java20/                   # Record patterns
-│   │   └── java21/                   # Virtual threads, pattern matching
+│   │   ├── v5/                       # Generics, enums, varargs
+│   │   ├── v6/                       # Scripting API
+│   │   ├── v7/                       # Try-with-resources, diamond operator
+│   │   ├── v8/                       # Lambda, streams, Optional
+│   │   ├── v9/                       # Modules, private interface methods
+│   │   ├── v10/                      # Local variable type inference (var)
+│   │   ├── v11/                      # String methods, HTTP client
+│   │   ├── v12/                      # Switch expressions (preview)
+│   │   ├── v13/                      # Text blocks, yield (preview)
+│   │   ├── v14/                      # Records (preview), pattern matching
+│   │   ├── v15/                      # Sealed classes, text blocks
+│   │   ├── v16/                      # Records, pattern matching for instanceof
+│   │   ├── v17/                      # Sealed classes, enhanced switch
+│   │   ├── v18/                      # UTF-8 by default
+│   │   ├── v19/                      # Virtual threads (preview)
+│   │   ├── v20/                      # Record patterns
+│   │   ├── v21/                      # Virtual threads, pattern matching
+│   │   ├── v22/                      # Foreign Function & Memory API
+│   │   ├── v23/                      # String templates (preview)
+│   │   ├── v24/                      # Primitive patterns (preview)
+│   │   └── v25/                      # Flexible constructor bodies
 │   │
 │   └── sample/                       # Advanced examples (Maven project)
 │       └── src/main/java/
@@ -229,7 +233,7 @@ java -cp out/production/Lessons tutorial.package.ClassName
 java -cp out/production/Lessons tutorial.datatype.DataTypes
 java -cp out/production/Lessons tutorial.thread.VirtualThead
 java -cp out/production/Lessons tutorial.lambda.s1.LambdaGame
-java -cp out/production/Lessons newfeatures.java8.Java8
+java -cp out/production/Lessons newfeatures.v8.Java8
 ```
 
 #### Compile and Run Multiple Related Classes
@@ -340,6 +344,10 @@ Each subdirectory demonstrates features introduced in specific Java versions:
 - **Java 19**: Virtual threads (preview), pattern matching enhancements
 - **Java 20**: Record patterns, scoped values
 - **Java 21**: Virtual threads, sequenced collections, pattern matching for switch
+- **Java 22**: Foreign Function & Memory API, unnamed variables
+- **Java 23**: String templates (preview), primitive patterns (preview)
+- **Java 24**: Structured concurrency, primitive patterns
+- **Java 25**: Flexible constructor bodies, stream gatherers
 
 ### Advanced Examples (sample/)
 
